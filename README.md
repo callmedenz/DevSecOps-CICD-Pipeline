@@ -64,20 +64,5 @@ minikube service portfolio-service
 
 ---
 
-## 📸 Screenshots
-(Add screenshots here)
-- ArgoCD dashboard  
-- Kubernetes pods  
-- Application running  
-
----
-
-## 📈 Future Improvements
-- Add monitoring with Prometheus & Grafana  
-- Implement Helm charts  
-- Deploy on cloud (AWS/GCP/Azure)  
-
----
-
 ## 👨‍💻 Author
 Dennis Pradhan
