@@ -1,19 +1,46 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: portfolio-deployment
+
 spec:
   replicas: 2
+
   selector:
     matchLabels:
       app: portfolio
+
   template:
     metadata:
       labels:
         app: portfolio
+
     spec:
       containers:
-      - name: portfolio
-        image: callmedenz/portfolio-app:latest
-        ports:
-        - containerPort: 80
+        - name: portfolio
+          image: callmedenz/portfolio-app:201630989079297e34cac72bdae36ca240803ad7
+          ports:
+            - containerPort: 80
+
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 20
+
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
