@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: callmedenz/portfolio-app:cc7ed750d93c4669bdc873776f4a813d63dd17b9
+          image: callmedenz/portfolio-app:83b63432d77f29e9a56f66da114cca5d452a37d0
           ports:
             - containerPort: 80
 
