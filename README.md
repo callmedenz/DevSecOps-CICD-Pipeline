@@ -51,7 +51,7 @@ Code Push → GitHub Actions → Docker Build → Trivy Scan → Docker Hub → 
 ## 🧪 How to Run Locally
 
 ### 1. Clone repository
-git clone https://github.com/callmedenz/DevSecOps-CICD-Pipeline
+git clone https://github.com/callmedenz/DevSecOps-CICD-Pipeline |                                           
 cd DevSecOps-CICD-Pipeline
 
 ### 2. Run using Docker
